@@ -56,3 +56,68 @@ for(let key in iveMemversArray){
     console.log(`${key}:${iveMemversArray[key]}`);
 
 }
+
+/* 
+ for...of
+*/
+for(let value of iveMemversArray){
+    console.log(value);
+}
+
+/* 
+while
+*/
+let number = 0;
+
+while( number < 10) {
+    number++;
+}
+
+console.log(number);
+
+/* 
+do ... while
+*/
+
+number = 0;
+
+do{
+    number++
+}while(number < 10);
+
+console.log(number);
+
+/**
+ * break
+ */
+console.log("---------------");
+
+for( i=0; i<10; i++){
+    if(i===5){
+        break;
+    }
+    console.log(i);
+}
+
+console.log("---------------");
+
+number=0;
+
+while(number<10){
+    if(number===5){
+        break;
+    }
+    number++;
+    console.log(number);
+}
+
+/**
+ * continue
+ */
+console.log("---------------");
+for(i=0; i<10; i++){
+    if(i===5){
+        continue;
+    }
+    console.log(i);
+}
